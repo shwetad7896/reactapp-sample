@@ -1,24 +1,92 @@
-import logo from './logo.svg';
 import './App.css';
+import Routers from './Router/Routers';
 
 function App() {
+  // var companies = [
+  //   {
+  //     "links": {
+  //       "self": "http://example.com/articles",
+  //       "next": "http://example.com/articles?page[offset]=2",
+  //       "last": "http://example.com/articles?page[offset]=10"
+  //     },
+  //     "data": [{
+  //       "type": "articles",
+  //       "id": "1",
+  //       "attributes": {
+  //         "title": "JSON:API paints my bikeshed!"
+  //       },
+  //       "relationships": {
+  //         "author": {
+  //           "links": {
+  //             "self": "http://example.com/articles/1/relationships/author",
+  //             "related": "http://example.com/articles/1/author"
+  //           },
+  //           "data": { "type": "people", "id": "9" }
+  //         },
+  //         "comments": {
+  //           "links": {
+  //             "self": "http://example.com/articles/1/relationships/comments",
+  //             "related": "http://example.com/articles/1/comments"
+  //           },
+  //           "data": [
+  //             { "type": "comments", "id": "5" },
+  //             { "type": "comments", "id": "12" }
+  //           ]
+  //         }
+  //       },
+  //       "links": {
+  //         "self": "http://example.com/articles/1"
+  //       }
+  //     }],
+  //     "included": [{
+  //       "type": "people",
+  //       "id": "9",
+  //       "attributes": {
+  //         "firstName": "Dan",
+  //         "lastName": "Gebhardt",
+  //         "twitter": "dgeb"
+  //       },
+  //       "links": {
+  //         "self": "http://example.com/people/9"
+  //       }
+  //     }, {
+  //       "type": "comments",
+  //       "id": "5",
+  //       "attributes": {
+  //         "body": "First!"
+  //       },
+  //       "relationships": {
+  //         "author": {
+  //           "data": { "type": "people", "id": "2" }
+  //         }
+  //       },
+  //       "links": {
+  //         "self": "http://example.com/comments/5"
+  //       }
+  //     }, {
+  //       "type": "comments",
+  //       "id": "12",
+  //       "attributes": {
+  //         "body": "I like XML better"
+  //       },
+  //       "relationships": {
+  //         "author": {
+  //           "data": { "type": "people", "id": "9" }
+  //         }
+  //       },
+  //       "links": {
+  //         "self": "http://example.com/comments/12"
+  //       }
+  //     }]
+  //   }
+  // ]
+
+  // console.log('company',JSON.stringify(companies));
+  // var b = JSON.parse(companies)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Routers />
+    </>
   );
 }
 
